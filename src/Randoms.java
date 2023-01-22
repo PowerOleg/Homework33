@@ -6,8 +6,13 @@ import java.util.function.Consumer;
 public class Randoms implements Iterable<Integer> {
     protected Random random;
 
-    public Randoms(int min, int max) {
+    protected int min;
+    protected int max;
 
+
+    public Randoms(int min, int max) {
+        this.min = min;
+        this.max = max;
     }
 
     @Override
